@@ -1,14 +1,15 @@
 package day05;
 
-public class Member {
-	//�ʵ� = �����͸� �����Ѵ�
+import java.io.Serializable;
+
+public class Member implements Serializable{
 	private String id;
-	String pw;
-	String name;
-	char gender;
+	private String pw;
+	private String name;
+	private char gender;
 	private int age;
-	String[] hobby;
-	String wdate;
+	private String[] hobby;
+	private static String wdate; //static은 직렬화 제외
 	
 
 	public Member(){

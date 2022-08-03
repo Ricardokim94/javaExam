@@ -16,7 +16,7 @@ public class CharacterStreamExam {
 			//read() : 입력스트림으로부터 !한개!의 문자를 읽고 리턴한다.
 			int readData ;
 			while((readData = reader.read()) != -1) {
-//				System.out.print((char)readData);
+				System.out.print((char)readData);
 				writer.write(readData);
 				writer.flush();
 			}
