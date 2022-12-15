@@ -9,7 +9,7 @@ import day05.Member;
 
 
 public class BoardService {
-	//ÇÊµå
+	//ï¿½Êµï¿½
 	static Member member;
 	
 	public static void main(String[] args) {
@@ -26,11 +26,11 @@ public class BoardService {
 	
 	
 	System.out.format("%x",System.identityHashCode(db));
-	System.out.format("%x",System.identityHashCode(db2)); //ÁÖ¼Ò¾Ë¾Æº¸´Â¹ý
+	System.out.format("%x",System.identityHashCode(db2)); //ï¿½Ö¼Ò¾Ë¾Æºï¿½ï¿½Â¹ï¿½
 	
 	
 	
-	//DB¿¬°á
+	//DBï¿½ï¿½ï¿½ï¿½
 		Board[] board = null;
 		
 		try {
@@ -42,21 +42,21 @@ public class BoardService {
 			ResultSet rs = stmt.executeQuery();
 			
 			
-			//·¹ÄÚµå °³¼ö ±¸ÇÏ±â
+			//ï¿½ï¿½ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½
 			
 			rs.last();
-			int rows = rs.getRow();	  //getRow = ÇöÀç Çà¹øÈ£	
-			System.out.println(rows); //º¯¼ö¿¡ ´ãÀ½
+			int rows = rs.getRow();	  //getRow = ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½È£	
+			System.out.println(rows); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			
 			//rs.first();
-			rs.beforeFirst(); //Ä¿¼­¸¦ Ã¹¹øÂ°ºóÄ­ set
+			rs.beforeFirst(); //Ä¿ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â°ï¿½ï¿½Ä­ set
 			System.out.println(rs.getRow());
 			
-			board = new Board[rows]; //»çÀÌÁî¸¦ Çà°¹¼ö·Î ¸¸µê
+			board = new Board[rows]; //ï¿½ï¿½ï¿½ï¿½ï¿½î¸¦ ï¿½à°¹ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			
 			
 			for(int i=0; i< board.length; i++) {
-				rs.next(); //¸Ç ¹Ø¿¡¼­ ´Ù½Ã nextÇÏ¸é Ä¿¼­°¡ À§·Î ¿Ã¶ó´Ü´Ù(1¹ø¤Š·Î)		
+				rs.next(); //ï¿½ï¿½ ï¿½Ø¿ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ nextï¿½Ï¸ï¿½ Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã¶ï¿½Ü´ï¿½(1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)		
 				board[i] = new Board();
 				
 				board[i].setSeqNo(rs.getInt("idx"));

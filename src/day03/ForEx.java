@@ -3,24 +3,24 @@ package day03;
 public class ForEx {
 	public static void main(String[] args) {
 		
-		//1~10±îÁö ÇÕÀ» ±¸ÇÏ½Ã¿À.
+		//1~10ê¹Œì§€ì˜ í•©ì„ êµ¬í•˜ì‹œì˜¤.
 		int num =0;
 		for(int i=0; i<=5; i++) {
-			num += i;//(sum = sum+1) //½ÇÇà¹® = Á¶°Ç½ÄÀÌ trueÀÏ¶§¸¸ ½ÇÇà
+			num += i;//(sum = sum+1) //ì‹¤í–‰ë¬¸ = ì¡°ê±´ì‹ì´ true ì¼ë•Œë§Œ ì‹¤í–‰
 		}
-		System.out.println("°á°ú :" + num);
+		System.out.println("ï¿½ï¿½ï¿½ :" + num);
 	
 			
-		//1~10±îÁö Â¦¼öÀÇ ÇÕÀ» ±¸ÇÏ½Ã¿À.
+		//1~10ê¹Œì§€ ì§ìˆ˜ì˜ í•©ì„ ìˆ˜í•˜ì‹œì˜¤.
 		int sum = 0;
 		int i =0;
 		
 		for (i = 0; i <= 10 ; i ++ ) {
-			if (i % 2 == 0) { //%³ª¸ÓÁö°¡ 0ÀÎ°Í
+			if (i % 2 == 0) { //%ë‚˜ë¨¸ì§€ê°€ 0ì¸ê²ƒ
 				sum += i;
 			}
 		}
-		System.out.println("°á°ú :" + sum);
+		System.out.println("ê²°ê³¼ :" + sum);
 	
 	
 		for(i =1; i<=10; i++) {
@@ -31,7 +31,7 @@ public class ForEx {
 		}
 
 	
-	int n = 5; //Çà °¹¼ö
+	int n = 5; //í–‰ ê°¯ìˆ˜
 	
 	for(int s=1; s<=n; s++) {
 		for(int j=n; j>0; j--) {

@@ -2,29 +2,29 @@ package day03;
 
 public class StringExam {
 	public static void main(String[] args) {
-		String str1 ="´ëÇÑ¹Î±¹";
-		String str2 ="´ëÇÑ¹Î±¹";
+		String str1 ="ëŒ€í•œë¯¼êµ­";
+		String str2 ="ëŒ€í•œë¯¼êµ­";
 
-		String str3 = new String("´ëÇÑ¹Î±¹");
-		String str4 = new String("´ëÇÑ¹Î±¹");
+		String str3 = new String("ëŒ€í•œë¯¼êµ­");
+		String str4 = new String("ëŒ€í•œë¯¼êµ­");
 		System.out.println(System.identityHashCode(str1));
-		System.out.format("%X%n",System.identityHashCode(str1));  //%n : 16Áø¼ö·Î ³ªÅ¸³»ÁÜ
-		System.out.format("%X%n",System.identityHashCode(str2));  //%n : 16Áø¼ö·Î ³ªÅ¸³»ÁÜ
-		System.out.format("%X%n",System.identityHashCode(str3));  //%n : 16Áø¼ö·Î ³ªÅ¸³»ÁÜ
-		System.out.format("%X%n",System.identityHashCode(str4));  //%n : 16Áø¼ö·Î ³ªÅ¸³»ÁÜ
+		System.out.format("%X%n",System.identityHashCode(str1));  //%n : 16ì§„ìˆ˜ë¡œ ë‚˜íƒ€ë‚´ì¤Œ
+		System.out.format("%X%n",System.identityHashCode(str2));  //%n : 16ì§„ìˆ˜ë¡œ ë‚˜íƒ€ë‚´ì¤Œ
+		System.out.format("%X%n",System.identityHashCode(str3));  //%n : 16ì§„ìˆ˜ë¡œ ë‚˜íƒ€ë‚´ì¤Œ
+		System.out.format("%X%n",System.identityHashCode(str4));  //%n : 16ì§„ìˆ˜ë¡œ ë‚˜íƒ€ë‚´ì¤Œ
 		
 		
 		
-		if(str1 == str2) {  //°ªÀ» ºñ±³ÇÏ´Â°Ô ¾Æ´Ï¶ó ¹øÁö°¡ °°ÀºÁö ¹°¾îº¸´Â °ÅÀÓ
-			System.out.println("µ¿ÀÏÇÑ ¹øÁö°ª");
+		if(str1 == str2) {  //ê°’ì„ ë¹„êµí•˜ëŠ”ê²Œ ì•„ë‹ˆë¼ ë²ˆì§€ê°€ ê°™ì€ì§€ ë¬¼ì–´ë³´ëŠ” ê±°ì„
+			System.out.println("ë™ì¼í•œ ë²ˆì§€ê°’");
 		}else {
-			System.out.println("ºÒÀÏÄ¡ÇÑ ¹øÁö°ª");
+			System.out.println("ë¶ˆì¼ì¹˜í•œ ë²ˆì§€ê°’");
 		}
 		
-		if("´ëÇÑ¹Î±¹".equals(str1)) {  //¹øÁö°ª¸»°í ÁøÂ¥ °ªÀÌ °°³Ä°í ¹°¾îº¼¶§´Â .equals
-			System.out.println("µ¿ÀÏÇÑ ¹®ÀÚ¿­");
+		if("ëŒ€í•œë¯¼êµ­".equals(str1)) {  //ë²ˆì§€ê°’ ë§ê³  ì§„ì§œ ê°’ì´ ê°™ëƒê³  ë¬¼ì–´ë³¼ë•ŒëŠ” .equals
+			System.out.println("ë™ì¼í•œ ë¬¸ìì—´");
 		}else {
-			System.out.println("ºÒÀÏÄ¡ÇÑ ¹®ÀÚ¿­");
+			System.out.println("ë¶ˆì¼ì¹˜í•œ ë¬¸ìì—´");
 		}
 	
 	}

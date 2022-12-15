@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class WhileEx {
 	public static void main(String[] args) {
-		//while¹®
+		//whileë¬¸
 //		int[] n = new int[6];
 		
 		int num [] = new int[6];
@@ -34,8 +34,8 @@ public class WhileEx {
 	
 		System.out.println("\n");
 		
-		//do while¹®
-		String[] menu  = {"ºÒ¹é", "Â«»Í", "¼­ºê¿şÀÌ", "±è¹ä"};
+		//do whileë¬¸
+		String[] menu  = {"ë¶ˆë°±", "ì§¬ë½•", "ì„œë¸Œì›¨ì´", "ê¹€ë°¥"};
 		int[] cnt = {0,0,0,0};
 		int no =1;
 		
@@ -45,7 +45,7 @@ public class WhileEx {
 			cnt[rd]++;
 		} while(no++ < 10);
 		
-		//ÃÖ´Ù·Î ¼±ÅÃµÈ ¸Ş´º Ãâ·Â
+		//ìµœë‹¤ë¡œ ì„ íƒëœ ë©”ë‰´ ì¶œë ¥
 		int maxIdx =0;
 		for(int j =0; j<cnt.length; j++) {
 			System.out.println("\n cnt["+ j + "]] =" + cnt[j]);			
@@ -54,8 +54,8 @@ public class WhileEx {
 			}
 		}
 		
-		//µ¿µî¼øÀ§Ãâ·Â
-		System.out.println("ÃÖ´Ù¼±ÅÃ ¸Ş´º´Â = ");
+		//ë™ë“±ìˆœìœ„ ì¶œë ¥
+		System.out.println("ìµœë‹¤ì„ íƒë©”ë‰´ëŠ” = ");
 		for(int j =0; j < cnt.length; j++) {
 			if(cnt[j] == cnt[maxIdx]) {
 				System.out.print(menu[j]);
