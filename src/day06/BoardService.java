@@ -33,7 +33,7 @@ public class BoardService {
 	//DB����
 		Board[] board = null;
 		
-		try {
+		try { 
 			
 			
 			String sql = "select * from board";
