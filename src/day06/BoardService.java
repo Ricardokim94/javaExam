@@ -42,7 +42,7 @@ public class BoardService {
 			ResultSet rs = stmt.executeQuery();
 			
 			
-			//���ڵ� ���� ���ϱ�
+			//���ڵ� ���� ���ϱ� 
 			
 			rs.last();
 			int rows = rs.getRow();	  //getRow = ���� ���ȣ	
