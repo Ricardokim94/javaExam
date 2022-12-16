@@ -34,7 +34,7 @@ public class WhileEx {
 	
 		System.out.println("\n");
 		
-		//do while문
+		//do while문 
 		String[] menu  = {"불백", "짬뽕", "서브웨이", "김밥"};
 		int[] cnt = {0,0,0,0};
 		int no =1;
